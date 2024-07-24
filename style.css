@@ -1,0 +1,107 @@
+html {
+  height: 100%;
+  width: 100%;
+
+}
+h2{
+  color: #00565F;
+  text-align: center;
+  font-family: "MS Gothic";
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+  font-size: 2.1vmax;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.backArrow{
+
+  width: 6%;
+  float: left;
+}
+
+.format_text{
+  color: #002C30;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 5px;
+  margin-top:0;
+  margin-left: 8%;
+  margin-right: 4%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 3.4vmin;
+  font-family: "MS Gothic";
+  text-align: center;
+  text-wrap: balance;
+  background-color: #e5e3d9;
+  opacity: .85;
+}
+model-viewer{
+  min-height:100vh; 
+  min-width:100vw;
+}
+.Hotspot a{
+  pointer-events: all;
+  font-weight: bold;
+  font-size: 2.9vmin;
+}
+.Hotspot:not([data-visible]) {
+  background-color: transparent;
+  border: 3px solid white;
+}
+.Hotspot{
+  --min-hotspot-opacity: 0;
+}
+
+.Hotspot{
+  transform: translateY(-50%);
+  background: rgb(255, 255, 255);
+  border-radius: 32px;
+  border: 3px #002C30 solid;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 24px;
+  padding: 2px;
+  position: relative;
+  transition: opacity 0.3s;
+  width: 24px;
+  pointer-events: none;
+}
+
+
+.HotspotAnnotation{
+  background: rgb(255, 255, 255);
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 4px;
+  color: #002C30;
+  display: block;
+  font-family: "MS Gothic", Helvetica Neue, sans-serif;
+  font-size: 2.8vmin;
+  font-weight: 700;
+  left: calc(100% + .4em);
+  max-width: 128px;
+  overflow-wrap: break-word;
+  padding: 0.3em .5em;
+  position: absolute;
+  transform: translate(10px, 10px);
+  width: max-content;
+}
+
+.Hotspot > * {
+  opacity: 1;
+  transform: translateY(-50%);
+}
+
+/* This keeps child nodes hidden while the element loads */
+:not(:defined) > * {
+  display: none;
+}
+

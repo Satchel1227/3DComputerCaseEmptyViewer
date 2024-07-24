@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Satchel</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!-- Import the component -->
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+    <model-viewer id="Hotspot-Demo" src="pc_case.glb"  ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1">
+        <h2> Thoroughly Explore Your Computer Case and all of its Components.</h2>
+            <button class="Hotspot" slot="hotspot-4" data-position="1.959324838233701m -11.532148638957345m -0.6123507542403033m" data-normal="0.9979707800267802m 0.036919649454012965m -0.05187737172344879m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation"><a href="CASEFANS.html"> Case Fans </a> Go Here (Three of them)</div>
+            </button><button class="Hotspot" slot="hotspot-14" data-position="-0.45259712196469704m -10.771600739302462m -1.5506952904165103m" data-normal="0.009362757255735885m -0.04769602271514786m 0.998818015553247m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation"><a href="MOTHERBOARD.html"> Motherboard </a> Goes Here </div>
+            </button><button class="Hotspot" slot="hotspot-17" data-position="-0.23371196190040244m -13.80153756475666m -0.6399775087080121m" data-normal="-0.8660256526947443m 0m 0.4999995688744564m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation"><a href="POWERSUPPLY.html">Power Supply</a> <br/> Goes Here</div>
+            </button><button class="Hotspot" slot="hotspot-18" data-position="-1.9447800278618423m -10.000328772136555m -0.18424118172098758m" data-normal="-0.9999999999999785m -8.22920727485662e-8m -1.9090502053825367e-7m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation">Another Case Fan Goes Here</div>
+            </button><button class="Hotspot" slot="hotspot-19" data-position="0.01825457142076914m -9.376947402954102m -0.4522266147422022m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation">Additional Case Fans Go Here</div>
+            </button><button class="Hotspot" slot="hotspot-20" data-position="-0.007508823446328083m -11.814628218353478m -1.7061987938622245m" data-normal="0.004298552780371681m 0.006127693506514195m -0.9999719865157648m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation">Cables are Managed Back Here (Inside of the Case)</div>
+            </button><button class="Hotspot" slot="hotspot-21" data-position="-1.7988314942551809m -12.043311265539145m -0.9104596715368253m" data-normal="0.9999999965492304m -0.00006803800779730261m 0.0000476693702948222m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation"><a href="GPU.html"> Video Card </a> Goes Here</div>
+            </button>
+            <div class="progress-bar hide" slot="progress-bar">
+                <div class="update-bar"></div>
+            </div>
+            <button slot="ar-button" id="ar-button">
+                View in your space
+            </button>
+        </model-viewer>
+
+
+
+
+  
+</body>
+</html>
